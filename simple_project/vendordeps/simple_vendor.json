@@ -1,0 +1,18 @@
+{
+    "fileName": "simple_vendor.json",
+    "name": "Simple Vendor",
+    "version": "0.0.1",
+    "uuid": "41590dfc-9499-4bfe-bc26-72c46e48812f",
+    "frcYear": "2026",
+    "mavenUrls": [],
+    "jsonUrl": "",
+    "javaDependencies" : [
+        {
+            "groupId": "org.team100.simple_vendor",
+            "artifactId": "simple_vendor",
+            "version": "0.0.1"
+        }
+    ],
+    "jniDependencies": [],
+    "cppDependencies": []
+}
