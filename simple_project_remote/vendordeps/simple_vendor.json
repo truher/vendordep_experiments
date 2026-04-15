@@ -1,0 +1,20 @@
+{
+    "fileName": "simple_vendor.json",
+    "name": "Simple Vendor",
+    "version": "0.0.1",
+    "uuid": "41590dfc-9499-4bfe-bc26-72c46e48812f",
+    "frcYear": "2026",
+    "mavenUrls": [
+        "truher.github.io/vendordep_experiments/simple_vendor_remote/repository/"
+    ],
+    "jsonUrl": "",
+    "javaDependencies" : [
+        {
+            "groupId": "org.team100.simple_vendor",
+            "artifactId": "simple_vendor",
+            "version": "0.0.2"
+        }
+    ],
+    "jniDependencies": [],
+    "cppDependencies": []
+}
