@@ -1,0 +1,25 @@
+{
+    "fileName": "simple_cpp.json",
+    "name": "Simple cpp",
+    "version": "0.0.1",
+    "uuid": "d8234a2e-70de-4b36-8d2f-bba576d92dfe",
+    "frcYear": "2026",
+    "mavenUrls": [],
+    "jsonUrl": "",
+    "javaDependencies": [],
+    "jniDependencies": [],
+    "cppDependencies": [
+        {
+            "groupId": "org.team100.simple_cpp",
+            "artifactId": "simple_cpp",
+            "version": "0.0.1",
+            "libName": "simple_cpp",
+            "headerClassifier": "headers",
+            "sharedLibrary": true,
+            "skipInvalidPlatforms": true,
+            "binaryPlatforms": [
+                "linuxx86-64"
+            ]
+        }
+    ]
+}

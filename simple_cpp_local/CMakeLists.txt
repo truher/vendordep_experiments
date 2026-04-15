@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.10.0)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin)
+project(simple_cpp_local VERSION 0.1.0 LANGUAGES C CXX)
+
+add_subdirectory(src)
