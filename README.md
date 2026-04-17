@@ -60,3 +60,18 @@ Step 6: use the C++ dependency
 * make a vendor json file with a `jniDependency`
 * specify `useLocal` in the build.gradle
 * gradle picks up the native dependency, and the test passes
+
+## simple_cpp_remote
+
+Step 7: same C++ dependency, served remotely
+
+* changed the version number, redid the zip file
+* put the files in the repository directory
+
+## cpp_remote_consumer
+
+Step 8: same C++ test, using remote dependency
+
+* remove 'useLocal'
+* change the version number
+* add a mavenUrl

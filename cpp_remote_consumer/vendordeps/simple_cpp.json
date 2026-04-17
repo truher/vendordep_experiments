@@ -1,0 +1,25 @@
+{
+    "fileName": "simple_cpp.json",
+    "name": "Simple cpp",
+    "version": "0.0.2",
+    "uuid": "d8234a2e-70de-4b36-8d2f-bba576d92dfe",
+    "frcYear": "2026",
+    "mavenUrls": [
+        "https://truher.github.io/vendordep_experiments/simple_cpp_remote/repository/"
+    ],
+    "jsonUrl": "",
+    "javaDependencies": [],
+    "jniDependencies": [
+        {
+            "groupId": "org.team100.simple_cpp",
+            "artifactId": "simple_cpp",
+            "version": "0.0.2",
+            "isJar": false,
+            "skipInvalidPlatforms": true,
+            "validPlatforms": [
+                "linuxx86-64"
+            ]
+        }
+    ],
+    "cppDependencies": []
+}
