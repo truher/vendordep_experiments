@@ -37,7 +37,19 @@ to the local gradle maven repo at ~/wpilib/2026/maven.
 cp -r hello-vendordep/build/repos/releases/org/team100/hello-vendordep/hello-vendordep-* ~/wpilib/2026/maven/org/team100/hello-vendordep/
 ```
 
-This makes `hello_consumer` work, since it has useLocal.
+This makes `hello_local_consumer` work, since it has useLocal.
+
+I also added a mavenUrl, and put copies of the repos/releases output in "repository"
+so that the `hello_remote_consumer` works too.
+
+Check what's visible in the library:
+
+```
+$ nm -g libhellowrapper.so | grep ' T '
+00000000000011b9 T Hello
+0000000000001219 T Hello_add
+0000000000001245 T Hello_delete
+```
 
 
 
