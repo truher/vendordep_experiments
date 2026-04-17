@@ -1,8 +1,8 @@
 # cpp_local_consumer
 
-Uses the local maven artifact made by simple_cpp_local.
+Uses the local C++ maven artifact made by simple_cpp_local.
 
-It has "useLocal" in the gradle file.
+It has "useLocal" in the gradle file:
 
 ```
 wpi.maven.useLocal = true

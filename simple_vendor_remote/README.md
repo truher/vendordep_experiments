@@ -1,6 +1,6 @@
 # simple_vendor_remote
 
-Serves the `simple_vendor` code from `github.io`.
+Serves the `simple_vendor` **(Java-only)** code from `github.io`.
 
 I copied the jar/pom files to the `repository` directory here.
 

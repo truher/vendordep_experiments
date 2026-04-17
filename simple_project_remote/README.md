@@ -1,5 +1,7 @@
 # simple_project_remote
 
+Simple **(Java-only)** remote dependency.
+
 I started with two changes from the "local" version:
 
 * remove `useLocal` from `build.gradle`.

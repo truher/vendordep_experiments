@@ -1,6 +1,6 @@
 # simple_vendor_local
 
-Very simple vendor code served locally.
+Very simple **(Java-only)** vendor code served locally.
 
 The Java code has one Java class with one static member.
 

@@ -1,6 +1,7 @@
 # simple_project_local
 
-A simple consumer of simple_vendor, that contains one interesting line:
+A simple **(Java-only)** consumer of simple_vendor,
+that contains one interesting line:
 
 ```java
 public class SimpleTest {
