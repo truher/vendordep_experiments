@@ -4,7 +4,9 @@
     "version": "0.0.1",
     "frcYear": "2026",
     "uuid": "cd883302-12b7-4fb5-8831-4b4c7337d0b7",
-    "mavenUrls": [],
+    "mavenUrls": [
+        "https://truher.github.io/vendordep_experiments/hello-vendordep/repository/"
+    ],
     "jsonUrl": "",
     "javaDependencies": [
         {
