@@ -75,3 +75,17 @@ Step 8: same C++ test, using remote dependency
 * remove 'useLocal'
 * change the version number
 * add a mavenUrl
+
+## simple_proxy_local
+
+Step 9: proxy classes in a local dependency
+
+* copy the FFM utility classes
+* jar and pom in local maven
+
+## dual_local_consumer
+
+Step 10: both dependencies
+
+* add a javaDependency to the c++ vendordep above
+* test passes.

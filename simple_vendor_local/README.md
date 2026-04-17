@@ -46,7 +46,7 @@ the repository would contain:
 
 ```
 org/team100/simple_vendor/simple_vendor/0.0.1/simple_vendor-0.0.1.jar
-org/team100/simple_vendor/simple_vendor/0.0.1/simple_vendor.pom
+org/team100/simple_vendor/simple_vendor/0.0.1/simple_vendor-0.0.1.pom
 ```
 
 WPI Gradle looks for local dependencies
