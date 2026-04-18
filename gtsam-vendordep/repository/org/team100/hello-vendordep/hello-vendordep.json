@@ -1,0 +1,30 @@
+{
+    "fileName": "hello-vendordep.json",
+    "name": "Hello VendorDep",
+    "version": "0.0.1",
+    "frcYear": "2026",
+    "uuid": "cd883302-12b7-4fb5-8831-4b4c7337d0b7",
+    "mavenUrls": [],
+    "jsonUrl": "",
+    "javaDependencies": [
+        {
+            "groupId": "org.team100.hello-vendordep",
+            "artifactId": "hello-vendordep-java",
+            "version": "0.0.1"
+        }
+    ],
+    "jniDependencies": [
+        {
+            "groupId": "org.team100.hello-vendordep",
+            "artifactId": "hello-vendordep-driver",
+            "version": "0.0.1",
+            "skipInvalidPlatforms": true,
+            "isJar": false,
+            "validPlatforms": [
+                "linuxx86-64"
+            ]
+        }
+    ],
+    "cppDependencies": [
+    ]
+}
