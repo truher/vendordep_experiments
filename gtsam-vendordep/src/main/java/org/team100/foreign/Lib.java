@@ -18,20 +18,20 @@ public class Lib {
     // it is mentioned in build.gradle model.components
     // and build.gradle nativeUtils.privateExportsConfigs
     // and publish.gradle model.publishing.driverTaskList.
-    public static final SymbolLookup lib2 = SymbolLookup.libraryLookup("libhellowrapper.so", arena);
+    public static final SymbolLookup lib = SymbolLookup.libraryLookup("libhellowrapper.so", arena);
     public static final Linker linker = Linker.nativeLinker();
 
-    public static MethodHandle down2(
+    public static MethodHandle down(
             String name, ValueLayout returnType, ValueLayout... parameterTypes) {
         return linker.downcallHandle(
-                lib2.findOrThrow(name),
+                lib.findOrThrow(name),
                 FunctionDescriptor.of(returnType, parameterTypes));
     }
 
-    public static MethodHandle downVoid2(
+    public static MethodHandle downVoid(
             String name, ValueLayout... parameterTypes) {
         return linker.downcallHandle(
-                lib2.findOrThrow(name),
+                lib.findOrThrow(name),
                 FunctionDescriptor.ofVoid(parameterTypes));
     }
 }

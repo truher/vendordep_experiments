@@ -11,11 +11,11 @@ import org.team100.foreign.Lib;
 
 /** Test proxy object */
 public class Hello extends ForeignObject {
-    private static final MethodHandle Hello = Lib.down2(
+    private static final MethodHandle Hello = Lib.down(
             "Hello", ADDRESS);
-    private static final MethodHandle Hello_delete = Lib.downVoid2(
+    private static final MethodHandle Hello_delete = Lib.downVoid(
             "Hello_delete", ADDRESS);
-    private static final MethodHandle Hello_add = Lib.down2(
+    private static final MethodHandle Hello_add = Lib.down(
             "Hello_add", JAVA_INT, ADDRESS, JAVA_INT, JAVA_INT);
 
     public Hello() throws Throwable {

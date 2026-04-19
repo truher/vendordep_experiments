@@ -5,9 +5,12 @@ apply plugin: 'maven-publish'
 
 ext.licenseFile = files("$rootDir/LICENSE.txt")
 
+// TODO: make this gtsam-vendordep
+
 def templateVendorFile = "hello-vendordep.json"
 
-def pubVersion = '0.0.1'
+// increment this so that the local one works
+def pubVersion = '0.0.2'
 
 def outputsFolder = file("$buildDir/outputs")
 

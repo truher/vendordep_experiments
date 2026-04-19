@@ -54,8 +54,51 @@ Ah, I can make one of the errors go away with
 
 which does something to remove version clash or caching or whatever magic.
 
+## custom gtsam
+
+OK i built a gtsam from 4.3a1+ and it references eigen5.0.0 which
+should be fine with wpimath.
+
+and i put it in the gradle maven repo.
+
+```
+~/wpilib/2026/maven/edu/wpi/first/thirdparty/frc2025$ cp -r ~/releases/maven/release/edu/wpi/first/thirdparty/frc2025/gtsam .
+```
+
+so
+
+```
+./gradlew build
+```
+
+aaaand it seems like it worked. (!)
+
+```
+./gradlew publish
+```
+
+seems to have worked also, depositing output in build/repos
+
+So copy the contents to the same local repo
+
+```
+~/wpilib/2026/maven/org/team100$ cp -r ~/FRC/TRUHER/vendordep_experiments/gtsam-vendordep/build/repos/releases/org/team100/hello-vendordep .
+```
+
+Ooops, forgot to include Point2.java, so do it over.
+
+
+
+
 
 ------------------------------------------------
+------------------------------------------------
+------------------------------------------------
+------------------------------------------------
+------------------------------------------------
+------------------------------------------------
+
+
 
 See **hello-vendordep** for notes.
 

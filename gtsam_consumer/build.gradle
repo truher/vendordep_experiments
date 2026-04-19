@@ -3,6 +3,10 @@ plugins {
     id "edu.wpi.first.GradleRIO" version "2026.2.1"
 }
 
+// try the local dependency first
+wpi.maven.useLocal = true
+
+
 // FFM requires 22 or higher.  I think Systemcore is targeting 25.
 java {
     sourceCompatibility = JavaVersion.VERSION_25
@@ -74,9 +78,6 @@ dependencies {
 
     testImplementation 'org.junit.jupiter:junit-jupiter:5.10.1'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
-
-    implementation "edu.wpi.first.thirdparty.frc2025.gtsam:gtsam-cpp:4.3-3"
-
 }
 
 test {

@@ -2,6 +2,8 @@ package org.team100.domain;
 
 import org.junit.jupiter.api.Test;
 
+import gtsam.Point2;
+
 public class HelloTest {
     @Test
     void test0() throws Throwable {
@@ -17,5 +19,14 @@ public class HelloTest {
         System.out.println("wait for the cleaner thread");
         Thread.sleep(100);
         System.out.println("done");
+    }
+
+    @Test
+    void testGtsam() throws Throwable {
+        Point2 p = new Point2(4, 5);
+        System.out.println("Point2 print:");
+        p.print();
+        System.out.println("Point2 print done!");
+
     }
 }

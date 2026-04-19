@@ -15,6 +15,7 @@ nativeUtils {
         }
     }
     // this particular build of GTSAM uses TBB.
+    // TODO: change frc2025 to something else.
     nativeDependencyContainer {
         gtsam(getNativeDependencyTypeClass('WPIStaticMavenDependency')) {
             groupId = "edu.wpi.first.thirdparty.frc2025.gtsam"
@@ -22,7 +23,8 @@ nativeUtils {
             headerClassifier = "headers"
             sourceClassifier = "sources"
             ext = "zip"
-            version = '4.3-3'
+            // this version is found only locally
+            version = '4.3-4'
             // include all here, or WPIStaticMavenDependency.resolveNativeDependency returns null.
             targetPlatforms = [
                 "linuxarm32",

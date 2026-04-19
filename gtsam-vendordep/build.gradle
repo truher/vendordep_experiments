@@ -10,16 +10,21 @@ plugins {
   id 'edu.wpi.first.GradleVsCode' version '2.1.0'
 }
 
+// does this work for normal java dependencies?  for nativeutils dependencies?
+// this looks in /home/joel/wpilib/2026/maven/
+// so copy the gtsam artifacts there.
+// ok this does not work.
+// wpi.maven.useLocal = true
+
+
 // WPILib Version
 // The 2026 version of wpimath uses Eigen 5, which is not compatible with GTSAM from 2025.
 // so try to find a version of wpimath which matches the 2025 thirdparty build of GTSAM.
-ext.wpilibVersion = "2025.3.1"
+// 2026.2.2 is the latest tag in github.
+ext.wpilibVersion = "2026.2.2"
 
 repositories {
   mavenCentral()
-  maven {
-    url = "https://frcmaven.wpi.edu"
-  }
 }
 if (project.hasProperty('releaseMode')) {
   wpilibRepositories.addAllReleaseRepositories(project)
@@ -51,7 +56,10 @@ dependencies {
     implementation "com.fasterxml.jackson.core:jackson-core:2.19.2"
     implementation "com.fasterxml.jackson.core:jackson-databind:2.19.2"
     implementation "edu.wpi.first.thirdparty.frc2025.opencv:opencv-java:4.10.0-2"
-    implementation "edu.wpi.first.thirdparty.frc2025.gtsam:gtsam-cpp:4.3-3"
+    // this version is found only locally
+    // do i need this?
+    // TODO: change frc2025 to something else.
+    implementation "edu.wpi.first.thirdparty.frc2025.gtsam:gtsam-cpp:4.3-4"
 
     testImplementation 'org.junit.jupiter:junit-jupiter:5.13.4'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
